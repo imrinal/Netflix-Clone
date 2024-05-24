@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(42, 42, 42);
+  }
+  
+  .container {
+    height: 100vh; /* Ensure container takes most of the viewport height */
+    position: relative;
+  }
+  
+  .bg {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bg img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Ensure the image covers the entire container while maintaining aspect ratio */
+  }
+  
+  .box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+    color: white; /* Text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center the text content */
+  }
+  
+  .logo{
+    height: 45px;
+    width: auto;
+  }
+
+ nav{
+  display: flex;
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  display: flex;
+  z-index: 3;
+  justify-content: space-around;
+  gap: 300px;
+}
+
+.bg-text{
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  color: white;
+  z-index: 4;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+  font-size: 45px;
+  font-weight: bolder;
+}
+
+h2{
+  font-weight: 400;
+}
+
+h3{
+  font-weight: 300;
+}
+
+.form {
+  display: flex;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  gap: 10px;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: space-around;
+  z-index: 4; /* Ensure form is on top of other elements */
+}
+
+.buttonA {
+  background-color: #0000004a; 
+  color: white;
+  border: none;
+  padding: 7.5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px; 
+  border: 0.5px solid #ffffff;
+  width: 150px;
+}
+
+.buttonB {
+  background-color: #e50914; /* Netflix red */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners */
+}
+
+.buttonB:hover {
+  background-color: #c1010b; /* Slightly lighter red on hover */
+}
+
+.buttonB:active {
+  background-color: #d40813; /* Slightly darker red when clicked */
+}
+
+.button2{
+  height: 55px;
+  width: 200px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+input::placeholder {
+  color: rgb(135, 135, 135); /* White text color for placeholder */
+  font-size: 14px; /* Adjust font size */
+  opacity: 3; /* Ensure the placeholder is fully opaque */
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  color: white; /* White text color */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  border: 1px solid #ffffff; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  outline: none; /* Remove default outline */
+  width: 350px; /* Adjust width as needed */
+  height: 33px;
+}
+
+input:focus::placeholder {
+  color: transparent; /* Hide placeholder on focus */
+}
+
+.br{
+  font-size: 7px;
+}
+
+.fbox{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: white;
+  padding: 50px;
+}
+
+.fbox-text{
+  width: 500px;
+}
+
+h4{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 1100;
+  font-size: 45px;
+}
+
+h5{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 80;
+  font-size: 22px;
+}
+
+.fbox img{
+  position: relative;
+  height: 350px;
+  z-index: 10;
+}
+
+.fbox video{
+  position: absolute;
+  height: 200px;
+  top: 680px;
+  left: 56.3%;
+}
+
+.download{
+  border: 2px solid rgb(115, 115, 115);
+  border-radius: 15px;
+  display: flex;
+  position: absolute;
+  padding: 10px;
+  background-color: black;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  line-height: 10px;
+  left: 19.5%;
+  top: 232%;
+}
+
+.download img{
+  height: 90px;
+}
+
+.gif img{
+  height: 55px;
+}
+
+.div-vd video{
+  position: absolute;
+  width: 300px;
+  top: 1568px;
+  left: 58%;
+}
+
+.faq{
+  background-color: black;
+  justify-content: center;
+  margin: auto;
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.accordion {
+  background-color: #3d3d3d;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 25px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 23px;
+  transition: 0.4s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.active, .accordion:hover {
+  background-color: #4b4b4b;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #ffffff;
+  font-size: 1.5em;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\00d7";
+}
+
+/* Panel styling */
+.panel {
+  margin: 5px 0;
+  padding: 0 20px;
+  background-color: #353535;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 22px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: max-height 0.2s ease-out;
+  box-sizing: border-box;
+}
+
+.ft {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ft-form{
+  display: flex;
+  gap: 8px;
+}
+
+footer{
+  padding: 100px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  color: #acacac;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td{
+  text-align: left;
+  padding: 8px;
+}
+
+.phn{
+  color: #acacac;
+}
